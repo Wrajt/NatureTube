@@ -1,3 +1,17 @@
+# About
+
+This is a project template for university students.
+
+# Google Cloud API KEY
+
+You need a Google Cloud account & project API KEY to run this project.
+
+[Creating a Google Cloud Project](https://cloud.google.com/resource-manager/docs/creating-managing-projects)
+
+[How to get Google Cloud API KEY](https://support.google.com/googleapi/answer/6158862?hl=en)
+
+After getting your API KEY, please paste it into API_KEY.const.ts file.
+
 # AngularProjectStartingTemplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.

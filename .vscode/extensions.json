@@ -1,4 +1,17 @@
 {
   // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
-  "recommendations": ["angular.ng-template"]
+  "recommendations": [
+    "angular.ng-template",
+    "vincaslt.highlight-matching-tag",
+    "formulahendry.auto-close-tag",
+    "formulahendry.auto-rename-tag",
+    "cyrilletuzi.angular-schematics",
+    "steoates.autoimport",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "oderwat.indent-rainbow",
+    "naumovs.node-modules-resolve",
+    "yoavbls.pretty-ts-errors",
+    "streetsidesoftware.code-spell-checker",
+  ]
 }

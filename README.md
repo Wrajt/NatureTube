@@ -12,6 +12,10 @@ You need a Google Cloud account & project API KEY to run this project.
 
 After getting your API KEY, please paste it into API_KEY.const.ts file.
 
+# YouTube Data API documentation
+
+[YouTube Data API docs](https://developers.google.com/youtube/v3/docs?hl=pl)
+
 # AngularProjectStartingTemplate
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.

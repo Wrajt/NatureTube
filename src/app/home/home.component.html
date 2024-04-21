@@ -1,3 +1,10 @@
 <body><p>
     {{ playlistName}}</p>
+
+
+<mat-list>
+<mat-list-item *ngFor ="let item of playlistItems">
+    {{ item.snippet.title }}
+</mat-list-item>
+</mat-list>
 </body>

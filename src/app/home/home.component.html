@@ -1,22 +1,22 @@
 <body>
     <p class="playlist-name">
-        {{ playlistName}}</p>
+        Nature Tube</p>
 
-
-
-    <div *ngFor="let item of playlistItems" class="videos">
-        <mat-card class="example-card">
-            <mat-card-title>Title: <a [href]="'video?id=' + item.snippet.resourceId.videoId">
-                    {{ item.snippet.title }}
-                </a></mat-card-title>
-            <img mat-card-image class="image" [src]="item.snippet.thumbnails.medium.url" alt="thumbnail">
-            <mat-card-content>
-                <p class="title">{{item.snippet.publishedAt}}</p>
-                <p class="description">
-                    {{ item.snippet.description }}
-                </p>
-            </mat-card-content>
-        </mat-card>
-    </div>
-
+    <mat-tab-group>
+        <ng-container *ngFor="let playlist of playlistItems; index as i">
+            <mat-tab [label]="playlistNames[i]">
+                <div *ngFor="let item of playlist">
+                    <mat-card class="mat-card-video">
+                        <a [href]="'video?id=' + item.snippet.resourceId.videoId">
+                            <mat-card-title>{{ item.snippet.title }}</mat-card-title>
+                        </a>
+                        <img mat-card-image [src]="item.snippet.thumbnails.medium.url" [alt]="item.snippet.title" />
+                        <mat-card-footer>
+                            {{ item.snippet.description }}
+                        </mat-card-footer>
+                    </mat-card>
+                </div>
+            </mat-tab>
+        </ng-container>
+    </mat-tab-group>
 </body>

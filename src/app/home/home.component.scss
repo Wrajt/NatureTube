@@ -11,7 +11,6 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 500px; /* Adjust as needed */
   display: block;
 }
 .title {
@@ -20,6 +19,7 @@
 
 .image {
   padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 body {

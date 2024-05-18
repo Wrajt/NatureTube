@@ -5,13 +5,14 @@
     <mat-tab-group>
         <ng-container *ngFor="let playlist of playlistItems; index as i">
             <mat-tab [label]="playlistNames[i]">
-                <div *ngFor="let item of playlist">
+                <div class="videos" *ngFor="let item of playlist">
                     <mat-card class="mat-card-video">
                         <a [href]="'video?id=' + item.snippet.resourceId.videoId">
-                            <mat-card-title>{{ item.snippet.title }}</mat-card-title>
+                            <mat-card-title class="title">{{ item.snippet.title }}</mat-card-title>
                         </a>
-                        <img mat-card-image [src]="item.snippet.thumbnails.medium.url" [alt]="item.snippet.title" />
-                        <mat-card-footer>
+                        <img class="image" mat-card-image [src]="item.snippet.thumbnails.medium.url"
+                            [alt]="item.snippet.title" />
+                        <mat-card-footer class="description">
                             {{ item.snippet.description }}
                         </mat-card-footer>
                     </mat-card>

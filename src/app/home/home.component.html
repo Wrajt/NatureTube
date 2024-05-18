@@ -5,8 +5,9 @@
 
     <mat-list>
         <mat-list-item *ngFor="let item of playlistItems">
-            Title: <a [href]="'video?' + item.snippet.resourceId.videoId">{{ item.snippet.title }} </a><br>
-            Test
+            Title: <a [href]="'video?id=' + item.snippet.resourceId.videoId">
+                {{ item.snippet.title }}
+            </a>
 
         </mat-list-item>
     </mat-list>

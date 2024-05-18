@@ -1,14 +1,22 @@
 <body>
-    <p>
+    <p class="playlist-name">
         {{ playlistName}}</p>
 
 
-    <mat-list>
-        <mat-list-item *ngFor="let item of playlistItems">
-            Title: <a [href]="'video?id=' + item.snippet.resourceId.videoId">
-                {{ item.snippet.title }}
-            </a>
 
-        </mat-list-item>
-    </mat-list>
+    <div *ngFor="let item of playlistItems" class="videos">
+        <mat-card class="example-card">
+            <mat-card-title>Title: <a [href]="'video?id=' + item.snippet.resourceId.videoId">
+                    {{ item.snippet.title }}
+                </a></mat-card-title>
+            <img mat-card-image class="image" [src]="item.snippet.thumbnails.medium.url" alt="thumbnail">
+            <mat-card-content>
+                <p class="title">{{item.snippet.publishedAt}}</p>
+                <p class="description">
+                    {{ item.snippet.description }}
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </div>
+
 </body>

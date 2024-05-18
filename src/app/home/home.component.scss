@@ -1,1 +1,35 @@
+.videos {
+  display: inline-block;
+  padding: 10px;
+}
 
+.example-card {
+  max-width: 400px;
+  background-color: yellow;
+}
+.description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 500px; /* Adjust as needed */
+  display: block;
+}
+.title {
+  font-size: 26px;
+}
+
+.image {
+  padding-bottom: 10px;
+}
+
+body {
+  background-color: greenyellow;
+}
+.playlist-name {
+  font-size: 40px;
+  font-weight: bold;
+  color: #000000;
+  padding-top: 20px;
+
+  text-align: center;
+}

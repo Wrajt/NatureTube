@@ -1,1 +1,1 @@
-export const API_KEY = 'place your google cloud api key here';
+export const API_KEY = 'AIzaSyCtMvUx6PeNppbnNfdZS-roplNfWKUGgqE';
